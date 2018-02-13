@@ -1,0 +1,20 @@
+nav{
+  background-color: rgba(0, 0, 0, .75);
+  height: 80px;
+  padding-top:30px;
+  margin-bottom: 15px;
+}
+.logo{
+  margin-top: -10px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+ul a{
+  color: white;
+}
+ul a:hover{
+  text-decoration: none;
+}
