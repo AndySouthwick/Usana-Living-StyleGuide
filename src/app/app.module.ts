@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 import { AppComponent } from './app.component';
 import { ModulesComponent } from './pages/modules/modules.component';
 import { IconographyComponent } from './pages/iconography/iconography.component';
@@ -15,7 +14,10 @@ import { SidebarComponent } from './components/app-components/sidebar/sidebar.co
 import { UniversalFooterComponent } from './components/universal-footer/universal-footer.component';
 import { ButtonComponent } from './components/button/button.component';
 import { ModuleDisplayComponent } from './components/app-components/module-display/module-display.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import {Apollo, ApolloModule} from 'apollo-angular';
+import {HttpLink, HttpLinkModule} from 'apollo-angular-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory';
 
 
 const appRoutes: Routes = [
@@ -42,6 +44,9 @@ const appRoutes: Routes = [
     ModuleDisplayComponent
   ],
   imports: [
+    HttpClientModule, // provides HttpClient for HttpLink
+    ApolloModule,
+    HttpLinkModule,
     NgbModule.forRoot(),
     BrowserModule,
     RouterModule.forRoot(
@@ -52,4 +57,14 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(
+    apollo: Apollo,
+    httpLink: HttpLink
+  ) {
+    apollo.create({
+      link: httpLink.create({ uri: 'https://api.graph.cool/simple/v1/cjdm8lgrv37400140p7d786pe' }),
+      cache: new InMemoryCache()
+    });
+  }
+}

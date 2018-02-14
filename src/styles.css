@@ -3,7 +3,22 @@ app-sidebar{
   margin: 0 0 0 15px;
   width: 200px;
 }
-div  .btn-primary{
+div  .btn-ghost{
   background-color: white!important;
-  color: #353535;
+  color: #333;
+}
+
+div .btn {
+  min-width: 200px;
+  border-color: #333;
+  border-radius: 50px;
+}
+
+div .btn-ghost:hover{
+  background-color: #333!important;
+  color: white;
+}
+
+section{
+  margin: 55px 0 55px 0;
 }

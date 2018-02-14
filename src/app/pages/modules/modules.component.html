@@ -1,8 +1,8 @@
 <div id="modules">
   <app-sidebar></app-sidebar>
-  <div>
-    <app-module-display [data]="moduleData"></app-module-display>
-    <app-code-snippets [data]="snippetData"></app-code-snippets>
+  <div *ngIf="moduleData">
+    <section><app-module-display [data]="moduleData"></app-module-display></section>
+    <section><app-code-snippets [data]="snippetData"></app-code-snippets></section>
   </div>
 
   </div>

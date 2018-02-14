@@ -1,4 +1,4 @@
-
-  module-display works!
-  <div [innerHTML]="data.html"></div>
+ <div *ngIf="data" class="wrap-data">
+    <div [innerHTML]="data"></div>
+  </div>
 

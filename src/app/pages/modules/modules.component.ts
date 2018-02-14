@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {button} from '../component-data/button-data';
+import { Apollo } from 'apollo-angular';
+import gql from 'graphql-tag';
+
+const query = gql `
+query{
+allButtons{
+    id html css
+  }}
+`
 
 @Component({
   selector: 'app-modules',
@@ -11,22 +20,34 @@ export class ModulesComponent implements OnInit {
   module: string;
   moduleData: {};
   snippetData: {};
-  constructor(private route: ActivatedRoute) { }
+  loading: boolean;
+  constructor(private route: ActivatedRoute, private apollo: Apollo) {}
   moduleSelect = () => {
-    const id = this.route.params._value.id;
-    switch (id) {
+    this.route.params.subscribe(params => {
+      const id = params['id'];
+      console.log('id in constructor', id);
+      switch (id) {
       case 'button':
-        this.moduleData = button
-        this.snippetData = button
-      break;
+        this.apollo.watchQuery<any>({
+          query: query
+        })
+          .valueChanges
+          .subscribe(async({ data, loading })   => {
+            this.loading = loading;
+            await data.allButtons[0].html;
+            console.log(data.allButtons[0].html);
+            this.moduleData = data.allButtons[0].html;
+            this.snippetData = data.allButtons[0];
+          });
+      // this.moduleSelect();
+      break
       default:
         this.moduleData = '';
     }
-      console.log(id);
+    });
       }
 
-  ngOnInit(): void {
-    this.moduleSelect();
-  }
-
+   ngOnInit() {
+     this.moduleSelect();
+   }
 }
