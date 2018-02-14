@@ -34,10 +34,10 @@ export class ModulesComponent implements OnInit {
           .valueChanges
           .subscribe(async({ data, loading })   => {
             this.loading = loading;
-            await data.allButtons[0].html;
-            console.log(data.allButtons[0].html);
-            this.moduleData = data.allButtons[0].html;
-            this.snippetData = data.allButtons[0];
+            await data.allButtons;
+            console.log(data.allButtons);
+            this.moduleData = data.allButtons;
+            this.snippetData = data.allButtons;
           });
       // this.moduleSelect();
       break
