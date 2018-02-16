@@ -1,3 +1,46 @@
-<p>
-  universal-footer works!
-</p>
+<footer *ngIf="data">
+  <!-- <u-lead-collector></u-lead-collector> -->
+  <div class="logo-container">
+    <img class="img-fluid" src="assets/images/usana-full-logo.png">
+  </div>
+  <div class="container">
+  <div class="footer-link-wrapper">
+    <div >
+      <h4>{{data[0].companyLinkses[0].name}}</h4>
+      <div *ngFor="let item of data[0].companyLinkses[0].localLinkses">
+        {{item.name}}
+      </div>
+    </div>
+    <div>
+      <h4>{{data[0].companyLinkses[1].name}}</h4>
+      <div *ngFor="let item of data[0].companyLinkses[1].localLinkses">
+        {{item.name}}
+      </div>
+    </div>
+    <div>
+      <h4>{{data[0].companyLinkses[2].name}}</h4>
+      <div *ngFor="let item of data[0].companyLinkses[2].localLinkses">
+        {{item.name}}
+      </div>
+    </div>
+    <div>
+      <h4>{{data[0].followText}}</h4>
+      <div *ngFor="let item of data[0].socialMedias">
+        {{item.name}}
+      </div>
+    </div>
+  </div>
+    <div class="disclaimer" >
+      <div [innerHTML]="data[0].disclaimer1"></div>
+      <div [innerHTML]="data[0].disclaimer2"></div>
+      <div [innerHTML]="data[0].disclaimer3"></div>
+      <div [innerHTML]="data[0].disclaimer4"></div>
+      <div [innerHTML]="data[0].copyright"></div>
+      <div *ngFor="let legal of data[0].legals; index as i;">
+        <a href="{{legal.url}}" class="legal-link">{{legal.name}}</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<section><app-code-snippets ></app-code-snippets></section>

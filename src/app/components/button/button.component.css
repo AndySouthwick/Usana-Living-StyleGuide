@@ -1,0 +1,11 @@
+div  .btn-primary{ background-color: #333!important; color: white;}
+div .btn-primary:hover{background-color: white!important;color: #333;}
+div  .btn-ghost{ background-color: white!important; color: #333;}
+div .btn-ghost:hover{background-color: #333!important;color: white;}
+div .btn {margin: 20px;min-width: 200px;border-color: #333;border-radius: 50px;}
+
+
+.button-section{
+  width: 600px;
+  display: flex;
+}

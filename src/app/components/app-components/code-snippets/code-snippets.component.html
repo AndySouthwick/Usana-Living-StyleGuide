@@ -1,0 +1,16 @@
+<ngb-tabset *ngFor="let data of data">
+  <ngb-tab title="html">
+    <ng-template ngbTabContent >
+<div>
+  {{data.html}}
+</div>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="css">
+    <ng-template ngbTabContent>
+<div [innerHTML]="data.css"></div>
+    </ng-template>
+  </ngb-tab>
+
+
+</ngb-tabset>
