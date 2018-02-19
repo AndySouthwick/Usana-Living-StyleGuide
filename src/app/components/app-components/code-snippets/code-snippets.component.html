@@ -1,16 +1,19 @@
-<ngb-tabset *ngFor="let data of data">
-  <ngb-tab title="html">
-    <ng-template ngbTabContent >
-<div>
-  {{data.html}}
+<div *ngIf="data" class="snippet">
+    <ngb-tabset>
+      <ngb-tab title="html">
+        <ng-template ngbTabContent >
+          <div>
+            test
+            {{data.html}}
+          </div>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="css">
+        <ng-template ngbTabContent>
+          test
+          <div [innerHTML]="data.css"></div>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
 </div>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="css">
-    <ng-template ngbTabContent>
-<div [innerHTML]="data.css"></div>
-    </ng-template>
-  </ngb-tab>
 
-
-</ngb-tabset>

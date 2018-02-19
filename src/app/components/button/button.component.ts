@@ -12,7 +12,7 @@ allButtons{
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
   data: string;

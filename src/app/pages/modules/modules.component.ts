@@ -6,7 +6,7 @@ import { Apollo } from 'apollo-angular';
 @Component({
   selector: 'app-modules',
   templateUrl: './modules.component.html',
-  styleUrls: ['./modules.component.css']
+  styleUrls: ['./modules.component.scss']
 })
 export class ModulesComponent implements OnInit {
   page: string;

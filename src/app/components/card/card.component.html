@@ -1,0 +1,25 @@
+<section  *ngIf="data" >
+  <div class="top-level-card-container">
+  <div class="card-container">
+    <div class="card-inner">
+      <div class="card-bg-container">
+        <div class="card-bg">
+          <img src="{{data.image}}" class="img-fluid">
+        </div>
+        <h3 class="card-text1" [innerHTML]="data.text1"></h3>
+      </div>
+      <div class="card-content-container">
+        <p class="card-text2" [innerHTML]="data.text2"></p>
+      </div>
+    </div>
+    <div class="card-link">
+      <a href="{{data.linkUrl}}" class="btn btn-primary" target="{{data.target}}">
+        {{data.linkText}}
+      </a>
+    </div>
+  </div>
+</div>
+  <app-code-snippets [data]="data" ></app-code-snippets>
+</section>
+
+
