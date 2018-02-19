@@ -29,7 +29,7 @@ allFooters{
 @Component({
   selector: 'app-universal-footer',
   templateUrl: './universal-footer.component.html',
-  styleUrls: ['./universal-footer.component.css']
+  styleUrls: ['./universal-footer.component.scss']
 })
 export class UniversalFooterComponent implements OnInit {
   data: string;

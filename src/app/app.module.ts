@@ -18,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import {Apollo, ApolloModule} from 'apollo-angular';
 import {HttpLink, HttpLinkModule} from 'apollo-angular-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory';
-
+import { CardComponent } from './components/card/card.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 const appRoutes: Routes = [
   {path: 'angular-modules', component: ModulesComponent},
@@ -41,9 +42,11 @@ const appRoutes: Routes = [
     SidebarComponent,
     UniversalFooterComponent,
     ButtonComponent,
-    ModuleDisplayComponent
+    ModuleDisplayComponent,
+    CardComponent
   ],
   imports: [
+    AngularFontAwesomeModule,
     HttpClientModule, // provides HttpClient for HttpLink
     ApolloModule,
     HttpLinkModule,

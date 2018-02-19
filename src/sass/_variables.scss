@@ -1,0 +1,25 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$gbblue: rgb(45, 171, 195);
+$gbyellow: rgb(238, 174, 40);
+$gbtan: rgb(252, 248, 238);
+
+$white: #fff;
+$wool: #f6f6f6;
+$black: #333;
+$gray: #aaa;
+$ltgray: #ccc;
+$dkgray: #777;
+$blackglass: rgba(0, 0, 0, .5);
+$tintedglass: rgba(0, 0, 0, .2);
+$transparent: rgba(0, 0, 0, 0);
+$blue: rgb(70, 140, 210);
+
+$menu-mobile-width: 270px;
+$menu-mobile-negative-margin: -320px;

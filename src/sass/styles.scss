@@ -1,0 +1,543 @@
+@import './variables';
+@import './mixins';
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: 'Westfalia';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../assets/Westfalia-Regular.otf') format('otf');
+}
+
+b, strong {
+  font-weight: bold !important;
+}
+
+html,
+.root {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+body,
+.article {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin: auto;
+}
+
+.bottom-hero {
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  // height: 100vh;
+  width: 100vw; // TODO: something needs fixing here with the width.
+  position: relative;
+}
+
+.bottom-hero h2 {
+  text-align: center;
+}
+
+h1,
+.h1 {
+  font-size: 2.8125rem;
+  line-height: 4.125rem;
+  margin-bottom: 2.75rem;
+  margin-top: 1.375rem;
+  text-transform: uppercase;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.375rem;
+  margin-top: 1.375rem;
+  text-transform: uppercase;
+}
+
+h3,
+.h3 {
+  font-size: 1.4375rem;
+  line-height: 2.75rem;
+  margin-bottom: 1.375rem;
+  margin-top: 1.375rem;
+}
+
+h4,
+.h4 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 0;
+  margin-top: 1.375rem;
+}
+
+h5,
+.h5 {
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-bottom: 0;
+  margin-top: 1.375rem;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  margin-bottom: 1.375rem;
+  margin-top: 0;
+}
+
+ul {
+  ul,
+  ol {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+ol {
+  ul,
+  ol {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+hr,
+.hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+a,
+b,
+i,
+strong,
+em,
+small,
+code {
+  line-height: 0;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 100;
+  line-height: 1.4em;
+  text-align: center;
+
+  &.strong {
+    font-weight: 700;
+  }
+}
+
+section {
+  padding: 25px 0;
+}
+
+.btn {
+  border-radius: 23px;
+}
+
+.btn-primary {
+  background-color: $black;
+  border-color: $black;
+  color: $white;
+  font-size: .8rem;
+  letter-spacing: .15em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  &:hover {
+    background-color: transparent;
+    border-color: $black;
+    color: $black;
+  }
+  &:not([disabled]):not(.disabled):active {
+    background-color: $black;
+    border-color: $black;
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border-color: $white;
+  color: $white;
+  font-size: .8rem;
+  letter-spacing: .15em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  min-width: 256px;
+  &:hover {
+    background-color: $black;
+    border-color: $black;
+    color: $white;
+  }
+}
+
+.btn-default {
+  border: solid $black 1px;
+  border-radius: 23px;
+  color: $black;
+  font-weight: 300;
+  padding: .4em 3em;
+}
+
+.carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-indicators {
+  bottom: -20px;
+
+  li {
+    background-color: $gray;
+    border-radius: 8px;
+    height: 16px;
+    width: 16px;
+
+    &.active {
+      background-color: $dkgray;
+    }
+  }
+}
+
+u-column-2[src='column-2-wentz.json'] {
+  .column-2-content {
+
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .wentz-signature {
+    img {
+      margin-bottom: 40px;
+      margin-top: 40px;
+      width: 120px;
+    }
+  }
+}
+
+u-hero {
+  h1 {
+    align-self: center;
+  }
+}
+
+u-column-1:nth-child(even),
+u-hero + .container u-column-1 {
+  background-color: $ltgray;
+}
+
+u-column-1 + u-column-1 {
+  background-color: $white !important;
+}
+
+u-navbar2:not(.faded) .logo-mobile {
+  display: none;
+}
+
+u-navbar2.faded .logo-mobile {
+  display: block;
+}
+
+@include media-breakpoint-up(md) {
+
+  u-column-2[src='column-2-wentz.json'] {
+    .column-2-content {
+      padding: 4rem;
+      text-align: left;
+    }
+  }
+  .impact-section .thf-flex-cards u-card .top-level-card-container .card-container {
+    margin-bottom: 25px;
+
+  }
+  .hideformobile{
+    display: block;
+  }
+  .hidefordesktop{
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  h1, .h1 {
+    font-size: 5.3594rem;
+    line-height: 6.875rem;
+    margin-top: 1.375rem;
+    margin-bottom: 2.75rem;
+  }
+
+  h2, .h2 {
+    font-size: 3.0625rem;
+    line-height: 4.125rem;
+    margin-top: 1.375rem;
+    margin-bottom: 1.375rem;
+  }
+
+  h3, .h3 {
+    font-size: 1.75rem;
+    line-height: 2.3625rem;
+    margin-top: 1.375rem;
+    margin-bottom: 1.375rem;
+  }
+  //base * 1.75; LH = 1.75 * 1.35 (minor 7th x
+  h4, .h4 {
+    font-size: 1rem;
+    line-height: 1.35rem;
+    margin-top: 1.375rem;
+    margin-bottom: 0rem;
+  }
+  //base
+  h5, .h5 {
+    font-size: 1rem;
+    line-height: 1.35rem;
+    margin-top: 1.375rem;
+    margin-bottom: 0rem;
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: 0rem;
+    margin-bottom: 1.375rem;
+  }
+  ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  /* Let's make sure all's aligned */
+  hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+  }
+  a, b, i, strong, em, small, code {
+    line-height: 0;
+  }
+  sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  section {
+    background-color: $white;
+    padding: 55px 0 !important;
+    width: 100% !important;
+  }
+  .show-mobile-only {
+    display: none;
+  }
+}
+
+.heading-giveback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paint-img {
+  margin: -25px 0 15px;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+h1 strong, h2 strong, h3 strong {
+  font-weight: 700;
+}
+
+@include media-breakpoint-down(md) {
+  .show-desktop-only {
+    display: none;
+  }
+  .show-mobile-only{
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+  }
+
+}
+
+.wentz-title {
+  text-align: center;
+  margin: 10px;
+  font-family: Georgia, Times, "Times New Roman", serif !important;
+  font-style: italic;
+}
+
+h3.wentz-quote {
+  font-family: Georgia, Times, "Times New Roman", serif !important;
+  font-size: 30px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 61.4px;
+  text-transform: none;
+}
+
+@include media-breakpoint-down(md) {
+  h3.wentz-quote {
+    font-family: Georgia, Times, "Times New Roman", serif !important;
+    font-size: 25px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 45px;
+    text-transform: none;
+    text-align: center;
+    margin: 10px;
+  }
+  h2{
+    text-align: center;
+  }
+}
+
+h3.celaviveheader {
+  font-family: Georgia, Times, "Times New Roman", serif !important;
+  text-transform: none;
+  font-size: 30px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 100;
+  line-height: 61.4px;
+}
+
+//this is for Give Back page
+.our-reach {
+  .hero-link .btn-primary {
+    background-color: #2EABC3;
+    border-color: #2EABC3;
+  }
+  .paint-img {
+    margin-top: -3.5em;
+  }
+}
+
+//
+
+.social {
+  display: flex;
+  flex-direction: row;
+}
+
+.cards-below-hero .top-level-card-container .card-container .card-inner .card-content-container {
+  p.card-text2 {
+    text-align: center;
+    font-family: Georgia, Times, "Times New Roman", serif !important;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+  }
+}
+
+.cards-below-hero .card-bg-container {
+  h3.card-text1 {
+    text-align: center !important;
+    font-weight: 100;
+  }
+}
+
+.more-below {
+  position: absolute;
+  bottom: 40px;
+  color: $white;
+}
+
+.lifestyleFollow-section .more-below {
+  display: none;
+}
+
+.section-benefits {
+  background-image: url(../assets/en-US/images/benefits-texture.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0 0 !important;
+  .img-fluid {
+    margin-top: -150px;
+  }
+}
+.section-research {
+  background-image: url(../assets/en-US/images/Scientific-Research.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  padding: 150px 0 !important;
+}
+@include media-breakpoint-down(xs) {
+  .section-benefits {
+    padding-bottom: 100px!important;
+  }
+  .section-benefits .img-fluid {
+    width: 475px!important;
+    position: absolute;
+    left: 0;
+    bottom: -70px;
+  }
+  .section-research {
+    background-position: -600px center;
+  }
+}
+
+.olapic-wall-widget:nth-child(1) {
+  display: none !important;
+}
+
+//for ao modal in the header
+.ao-modal .modal-dialog {
+  margin-top: 15%;
+  .modal-header {
+    background: url(../assets/en-US/images/ao-modal-image.jpg) center center no-repeat;
+    background-size: cover;
+    height: 300px;
+    .close {
+      color: $black;
+      cursor: pointer;
+      font-size: 2rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md){
+  .olapic-wall-list-container{
+    ul{
+      li{
+        width: 150px;
+      }
+    }
+  }
+}
+
+
+

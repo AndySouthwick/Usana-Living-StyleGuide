@@ -1,10 +1,11 @@
 <div id="modules">
   <app-sidebar></app-sidebar>
   <div class="module-container">
-    <section [ngSwitch]="page" class="module-container">
+    <div [ngSwitch]="page" class="module-container">
       <app-universal-footer *ngSwitchCase="'footer'" ></app-universal-footer>
       <app-button *ngSwitchCase="'button'"></app-button>
-    </section>
+      <app-card *ngSwitchCase="'card'"></app-card>
+    </div>
   </div >
   </div>
 

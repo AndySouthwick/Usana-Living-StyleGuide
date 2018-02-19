@@ -4,29 +4,31 @@
     <img class="img-fluid" src="assets/images/usana-full-logo.png">
   </div>
   <div class="container">
-  <div class="footer-link-wrapper">
-    <div >
+  <div class="row footer-link-wrapper">
+    <div class="col-md-3">
       <h4>{{data[0].companyLinkses[0].name}}</h4>
       <div *ngFor="let item of data[0].companyLinkses[0].localLinkses">
         {{item.name}}
       </div>
     </div>
-    <div>
+    <div class="col-md-3" >
       <h4>{{data[0].companyLinkses[1].name}}</h4>
       <div *ngFor="let item of data[0].companyLinkses[1].localLinkses">
         {{item.name}}
       </div>
     </div>
-    <div>
+    <div class="col-md-3">
       <h4>{{data[0].companyLinkses[2].name}}</h4>
       <div *ngFor="let item of data[0].companyLinkses[2].localLinkses">
         {{item.name}}
       </div>
     </div>
-    <div>
+    <div class="col-md-3">
       <h4>{{data[0].followText}}</h4>
-      <div *ngFor="let item of data[0].socialMedias">
-        {{item.name}}
+      <div class="d-flex">
+        <div *ngFor="let item of data[0].socialMedias">
+          <a href="{{item.url}}" target="{{item.target}}"><fa name="{{item.name}}" size="2x"></fa></a>
+        </div>
       </div>
     </div>
   </div>
