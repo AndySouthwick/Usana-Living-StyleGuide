@@ -1,0 +1,12 @@
+@import "~sass/variables";
+@import "~sass/mixins";
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+  color: $white;
+  width: 100%;
+  text-align: center;
+}
