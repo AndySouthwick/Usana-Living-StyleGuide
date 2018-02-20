@@ -12,6 +12,8 @@ allFooters{
     disclaimer3
     disclaimer4
     copyright
+    html
+    css
     socialMedias{
     name url
     }

@@ -1,5 +1,4 @@
 <footer *ngIf="data">
-  <!-- <u-lead-collector></u-lead-collector> -->
   <div class="logo-container">
     <img class="img-fluid" src="assets/images/usana-full-logo.png">
   </div>
@@ -45,4 +44,4 @@
   </div>
 </footer>
 
-<section><app-code-snippets ></app-code-snippets></section>
+<app-code-snippets [data]="data[0]"></app-code-snippets>

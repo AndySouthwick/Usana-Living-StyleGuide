@@ -1,16 +1,14 @@
-<div *ngIf="data" class="snippet">
+<div *ngIf="data" class="snippet tab-data">
     <ngb-tabset>
       <ngb-tab title="html">
         <ng-template ngbTabContent >
           <div>
-            test
             {{data.html}}
           </div>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="css">
         <ng-template ngbTabContent>
-          test
           <div [innerHTML]="data.css"></div>
         </ng-template>
       </ngb-tab>
