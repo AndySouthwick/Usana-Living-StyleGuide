@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./typeography.component.scss']
 })
 export class TypeographyComponent implements OnInit {
+data: {};
+
 
   constructor() { }
-
   ngOnInit() {
+    this.data = {
+      title: 'Typography',
+      description: 'Typography is the primary way that users digest content and accomplish work.'
+
+    };
   }
 
 }

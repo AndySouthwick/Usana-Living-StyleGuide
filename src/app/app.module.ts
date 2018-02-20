@@ -20,6 +20,10 @@ import {HttpLink, HttpLinkModule} from 'apollo-angular-link-http';
 import {InMemoryCache} from 'apollo-cache-inmemory';
 import { CardComponent } from './components/card/card.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FormComponent } from './components/form/form.component';
+import { AccordianComponent } from './components/accordian/accordian.component';
+import { JumbotronComponent } from './components/app-components/jumbotron/jumbotron.component';
+import { AppFooterComponent } from './components/app-components/app-footer/app-footer.component';
 
 const appRoutes: Routes = [
   {path: 'angular-modules', component: ModulesComponent},
@@ -43,7 +47,11 @@ const appRoutes: Routes = [
     UniversalFooterComponent,
     ButtonComponent,
     ModuleDisplayComponent,
-    CardComponent
+    CardComponent,
+    FormComponent,
+    AccordianComponent,
+    JumbotronComponent,
+    AppFooterComponent
   ],
   imports: [
     AngularFontAwesomeModule,

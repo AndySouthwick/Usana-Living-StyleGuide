@@ -1,3 +1,4 @@
+<app-jumbotron [data]="data"></app-jumbotron>
 <div id="modules">
   <app-sidebar></app-sidebar>
   <div class="module-container">
@@ -5,6 +6,8 @@
       <app-universal-footer *ngSwitchCase="'footer'" ></app-universal-footer>
       <app-button *ngSwitchCase="'button'"></app-button>
       <app-card *ngSwitchCase="'card'"></app-card>
+      <app-form *ngSwitchCase="'form'"></app-form>
+      <app-accordian *ngSwitchCase="'accordian'"></app-accordian>
     </div>
   </div >
   </div>

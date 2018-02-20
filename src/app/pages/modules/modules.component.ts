@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import { Apollo } from 'apollo-angular';
+
 
 
 @Component({
@@ -10,9 +10,16 @@ import { Apollo } from 'apollo-angular';
 })
 export class ModulesComponent implements OnInit {
   page: string;
+  data: {};
 
   constructor(private route: ActivatedRoute) {}
   moduleSelect = () => {
+
+    this.data = {
+      title: 'Modules',
+      description: 'Html and CSS we use for our components'
+    }
+
     this.route.params.subscribe(params => {
       const id = params['id'];
       this.page = id;

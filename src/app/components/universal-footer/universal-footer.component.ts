@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Apollo } from 'apollo-angular';
 import gql from 'graphql-tag';
-
+import {ActivatedRoute} from '@angular/router';
 const queryFooter = gql `
 query{
 allFooters{
@@ -34,10 +34,18 @@ allFooters{
   styleUrls: ['./universal-footer.component.scss']
 })
 export class UniversalFooterComponent implements OnInit {
+  page: string;
   data: string;
   loading: boolean;
-  constructor( private apollo: Apollo) {}
+  constructor( private apollo: Apollo, private route: ActivatedRoute) {}
   ngOnInit() {
+
+    this.route.params.subscribe(params => {
+      const id = params['id'];
+      this.page = id;
+      console.log('id in constructor', id);
+    });
+
   this.apollo.watchQuery<any>({query: queryFooter})
     .valueChanges
     .subscribe(async({ data, loading })   => {
