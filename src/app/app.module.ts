@@ -13,7 +13,6 @@ import { CodeSnippetsComponent } from './components/app-components/code-snippets
 import { SidebarComponent } from './components/app-components/sidebar/sidebar.component';
 import { UniversalFooterComponent } from './components/universal-footer/universal-footer.component';
 import { ButtonComponent } from './components/button/button.component';
-import { ModuleDisplayComponent } from './components/app-components/module-display/module-display.component';
 import { HttpClientModule } from '@angular/common/http';
 import {Apollo, ApolloModule} from 'apollo-angular';
 import {HttpLink, HttpLinkModule} from 'apollo-angular-link-http';
@@ -24,6 +23,7 @@ import { FormComponent } from './components/form/form.component';
 import { AccordianComponent } from './components/accordian/accordian.component';
 import { JumbotronComponent } from './components/app-components/jumbotron/jumbotron.component';
 import { AppFooterComponent } from './components/app-components/app-footer/app-footer.component';
+import { HeroComponent } from './components/specs/hero/hero.component';
 
 const appRoutes: Routes = [
   {path: 'angular-modules', component: ModulesComponent},
@@ -31,6 +31,7 @@ const appRoutes: Routes = [
   {path: 'iconography', component: IconographyComponent},
   {path: 'typography', component: TypeographyComponent},
   {path: 'design-elements', component: DesignelementsComponent},
+  {path: 'design-elements/:id', component: DesignelementsComponent},
   {path: 'master-sass', component: MastersassComponent},
 ]
 @NgModule({
@@ -46,12 +47,12 @@ const appRoutes: Routes = [
     SidebarComponent,
     UniversalFooterComponent,
     ButtonComponent,
-    ModuleDisplayComponent,
     CardComponent,
     FormComponent,
     AccordianComponent,
     JumbotronComponent,
-    AppFooterComponent
+    AppFooterComponent,
+    HeroComponent
   ],
   imports: [
     AngularFontAwesomeModule,

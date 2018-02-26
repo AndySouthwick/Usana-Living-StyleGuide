@@ -1,11 +1,11 @@
 <div  class="button-section">
-<div  *ngFor="let data of data">
-  <div [innerHTML]="data.html"></div>
+  <div  *ngFor="let data of data">
+    <div [innerHTML]="data.html"></div>
     <ngb-tabset>
       <ngb-tab title="html">
         <ng-template ngbTabContent >
           <div>
-            {{data.html}}
+           <PRE>{{data.html}}</PRE>
           </div>
         </ng-template>
       </ngb-tab>

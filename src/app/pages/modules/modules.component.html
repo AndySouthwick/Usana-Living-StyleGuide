@@ -1,6 +1,6 @@
 <app-jumbotron [data]="data"></app-jumbotron>
 <div id="modules">
-  <app-sidebar></app-sidebar>
+  <app-sidebar [data]="data"></app-sidebar>
   <div class="module-container">
     <div [ngSwitch]="page" class="module-container">
       <app-universal-footer *ngSwitchCase="'footer'" ></app-universal-footer>

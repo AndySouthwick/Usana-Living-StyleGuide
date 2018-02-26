@@ -17,8 +17,23 @@ export class ModulesComponent implements OnInit {
 
     this.data = {
       title: 'Modules',
-      description: 'Html and CSS we use for our components'
+      description: 'Html and CSS we use for our components',
+      secondaryNav: [
+        {
+          link: '/angular-modules/button',
+          linkText: 'Buttons'
+        },
+        {
+          link: '/angular-modules/footer',
+          linkText: 'Footer'
+        },
+        {
+          link: '/angular-modules/card',
+          linkText: 'Card'
+        },
+      ]
     }
+
 
     this.route.params.subscribe(params => {
       const id = params['id'];

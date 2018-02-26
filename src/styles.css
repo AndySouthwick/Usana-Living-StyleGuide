@@ -55,3 +55,14 @@ div .btn-primary:hover{
 section{
   margin: 55px 0 55px 0;
 }
+
+
+/* not to be included when copying over styles, these are specific to Usana UX/UI Digital Styleguide */
+
+#modules{
+  display: flex;
+}
+.module-container{
+  width: 100%;
+}
+
