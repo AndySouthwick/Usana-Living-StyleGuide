@@ -34,8 +34,9 @@ allFooters{
   styleUrls: ['./universal-footer.component.scss']
 })
 export class UniversalFooterComponent implements OnInit {
+  public isCollapsed = [];
   page: string;
-  data: string;
+  data: {};
   loading: boolean;
   constructor( private apollo: Apollo, private route: ActivatedRoute) {}
   ngOnInit() {
@@ -52,9 +53,8 @@ export class UniversalFooterComponent implements OnInit {
       this.loading = loading;
       await data.allFooters;
       console.log(data.allFooters);
-      this.data = data.allFooters;
-      console.log( data.allFooters[0].companyLinkses[0]);
-    });
+      this.data = data.allFooters[0];
+});
   }
 
 }

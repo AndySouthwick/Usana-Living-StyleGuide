@@ -1,15 +1,14 @@
-<app-jumbotron [data]="data"></app-jumbotron>
+
 <div id="modules">
   <app-sidebar [data]="data"></app-sidebar>
-  <div class="module-container">
-    <div [ngSwitch]="page" class="module-container">
-      <app-universal-footer *ngSwitchCase="'footer'" ></app-universal-footer>
-      <app-button *ngSwitchCase="'button'"></app-button>
-      <app-card *ngSwitchCase="'card'"></app-card>
-      <app-form *ngSwitchCase="'form'"></app-form>
-      <app-accordian *ngSwitchCase="'accordian'"></app-accordian>
-    </div>
-  </div >
+      <div [ngSwitch]="page">
+        <app-footer-display *ngSwitchCase="'footer'" ></app-footer-display>
+        <app-button *ngSwitchCase="'button'"></app-button>
+        <app-card *ngSwitchCase="'card'"></app-card>
+        <app-hero *ngSwitchCase="'hero'"></app-hero>
+        <app-hero-video *ngSwitchCase="'hero-video'"></app-hero-video>
+        <app-button *ngSwitchCase="'buttons'"></app-button>
+      </div>
   </div>
 
 

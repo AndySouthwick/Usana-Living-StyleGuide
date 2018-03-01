@@ -1,9 +1,12 @@
-<app-jumbotron [data]="data"></app-jumbotron>
 <div id="modules">
 <app-sidebar [data]="data"></app-sidebar>
 <div class="module-container">
-<div [ngSwitch]="page" class="module-container">
-  <app-hero></app-hero>
-</div>
+  <section>
+    <div [ngSwitch]="page" class="module-container">
+      <app-colors *ngSwitchCase="'colors'"></app-colors>
+      <app-type *ngSwitchCase="'type'"></app-type>
+    </div>
+  </section>
+
 </div>
 </div>

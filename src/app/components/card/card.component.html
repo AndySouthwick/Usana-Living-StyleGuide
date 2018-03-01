@@ -1,5 +1,7 @@
-<section  *ngIf="data" >
-  <div class="top-level-card-container">
+<section  *ngIf="data" class="section-card" >
+
+
+  <div>
   <div class="card-container">
     <div class="card-inner">
       <div class="card-bg-container">
@@ -19,7 +21,11 @@
     </div>
   </div>
 </div>
-  <app-code-snippets [data]="data" ></app-code-snippets>
+
+  <!-- Remove  For Production Use -->
+  <app-code-snippets [data]="cardsSnippetData"></app-code-snippets>
+<!--close Remove -->
 </section>
+
 
 

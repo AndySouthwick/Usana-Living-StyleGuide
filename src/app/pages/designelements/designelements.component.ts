@@ -16,8 +16,12 @@ export class DesignelementsComponent implements OnInit {
       description: 'Our parameters for usana.com are very specific. Character counts for sections, width and height for images are just a few.',
       secondaryNav: [
         {
-          link: '/design-elements/hero',
-          linkText: 'Hero'
+          link: '/design-elements/colors',
+          linkText: 'Colors'
+        },
+        {
+          link: '/design-elements/type',
+          linkText: 'Typography'
         },
     ]
     };

@@ -8,7 +8,6 @@ nav{
 }
 nav ul{
   display: flex;
-  justify-content: space-around;
   list-style: none;
 }
 ul a{
@@ -16,4 +15,8 @@ ul a{
 }
 ul a:hover{
   text-decoration: none;
+}
+ul li{
+  margin-left: 50px;
+
 }

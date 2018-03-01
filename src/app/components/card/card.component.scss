@@ -1,17 +1,5 @@
 @import "~sass/variables";
 @import "~sass/mixins";
-
-@keyframes animate-cards {
-  from{
-    opacity: 0;
-    margin-top: 55px;
-  }
-  to{
-    opacity: 1;
-    margin-top: 0;
-  }
-}
-
 .card-container {
   margin:0 20px 0 20px;
   text-align: center;
@@ -21,43 +9,28 @@
   position: relative;
   padding-bottom: 20px;
 }
-
 .card-bg-container,
 .card-container,
 .card-bg img {
   width: 320px;
 }
-
-.card-bg-container-reach-imp[a],
 .card-container,
 .card-bg img {
   width: 320px;
 }
+.card-bg img {
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
 .card-bg-container {
   position: relative;
 }
-
 .card-inner {
   overflow: hidden;
 }
-
 :host[card-type] .card-container {
   box-shadow: 0 15px 30px $tintedglass;
 }
-
-:host[card-type="shop"] .card-bg img {
-  height: auto;
-}
-
-:host[card-type="shop"] .card-text2 {
-  text-transform: uppercase;
-  padding: 1.25rem;
-  font-weight: 200;
-  font-size: 1.875rem;
-  line-height: 1.875rem;
-  margin: 5px 0 -9px;
-}
-
 .card-text1 {
   position: relative;
   color: #333;
@@ -66,51 +39,21 @@
   font-size: 1.35rem;
   line-height: 1.35rem;
 }
-
 .card-text1:empty {
   display: none;
 }
-
-// .card-text1 strong {
-//   /* font-weight: 900; */
-// }
-
 .card-content-container {
   position: relative;
 }
-
 .card-text2 {
   margin: 1.25rem;
-}
-
-:host:not([card-type]) .card-text1,
-:host:not([card-type]) .card-text2 {
-  text-align: left;
-
 }
 :host:not([card-type]) .card-text2 strong{
   text-align: right;
   display:block;
 
 }
-
-
-.card-bg img {
-  height: auto;
-  border-radius: 10px 10px 0 0;
-}
-
-@include media-breakpoint-up(lg){
-  .hidden-card{
-    display: none;
-  }
-}
-@include media-breakpoint-down(md) { /* Tablets */
-
-}
 @include media-breakpoint-down(sm) { /* mobile */
-
-
   .card-bg-container,
   .card-container,
   .card-bg img {
@@ -123,6 +66,4 @@
     width: 220px!important;
   }
 }
-.show-card{
-  display: none;
-}
+

@@ -16,13 +16,9 @@ export class ModulesComponent implements OnInit {
   moduleSelect = () => {
 
     this.data = {
-      title: 'Modules',
+      title: 'UI COMPONENTS',
       description: 'Html and CSS we use for our components',
       secondaryNav: [
-        {
-          link: '/angular-modules/button',
-          linkText: 'Buttons'
-        },
         {
           link: '/angular-modules/footer',
           linkText: 'Footer'
@@ -30,6 +26,18 @@ export class ModulesComponent implements OnInit {
         {
           link: '/angular-modules/card',
           linkText: 'Card'
+        },
+        {
+          link: '/angular-modules/hero',
+          linkText: 'Hero'
+        },
+        {
+          link: '/angular-modules/hero-video',
+          linkText: 'Hero Video'
+        },
+        {
+          link: '/angular-modules/buttons',
+          linkText: 'Buttons'
         },
       ]
     }

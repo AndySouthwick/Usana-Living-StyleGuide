@@ -1,15 +1,22 @@
-<div *ngIf="data" class="snippet tab-data">
-    <ngb-tabset>
-      <ngb-tab title="html">
+<div *ngIf="data">
+    <ngb-tabset class="snippet">
+      <ngb-tab title="RULES">
         <ng-template ngbTabContent >
-          <div>
-            {{data.html}}
-          </div>
+          <div [innerHTML]="data[0].rules"></div>
         </ng-template>
       </ngb-tab>
-      <ngb-tab title="css">
+      <ngb-tab title="HTLM">
         <ng-template ngbTabContent>
-          <div [innerHTML]="data.css"></div>
+        <PRE>
+            {{data[0].html}}
+        </PRE>
+        </ng-template>
+      </ngb-tab>
+      <ngb-tab title="CSS">
+        <ng-template ngbTabContent >
+          <PRE>
+            {{data[0].css}}
+          </PRE>
         </ng-template>
       </ngb-tab>
     </ngb-tabset>

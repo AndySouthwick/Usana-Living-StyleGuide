@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {heroData} from '../../component-data/hero-data';
 
 @Component({
   selector: 'app-hero',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
-
+  heroSnippetsData: {}
   constructor() { }
 
   ngOnInit() {
+    this.heroSnippetsData = heroData;
+    console.log(heroData);
   }
 
 }

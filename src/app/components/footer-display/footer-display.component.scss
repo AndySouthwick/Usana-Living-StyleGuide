@@ -1,0 +1,14 @@
+
+#section-hero{
+  display: flex;
+}
+
+.hero-img-specs{
+}
+.hero-img-specs img{
+  max-width: 600px;
+}
+.hero-img-specs:last-child  {
+  writing-mode: vertical-lr;
+}
+

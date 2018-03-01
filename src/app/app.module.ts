@@ -23,7 +23,12 @@ import { FormComponent } from './components/form/form.component';
 import { AccordianComponent } from './components/accordian/accordian.component';
 import { JumbotronComponent } from './components/app-components/jumbotron/jumbotron.component';
 import { AppFooterComponent } from './components/app-components/app-footer/app-footer.component';
-import { HeroComponent } from './components/specs/hero/hero.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { HeroVideoComponent } from './components/hero-video/hero-video.component';
+import { TwoColLayoutComponent } from './components/app-components/two-col-layout/two-col-layout.component';
+import { ColorsComponent } from './components/colors/colors.component';
+import { TypeComponent } from './components/type/type.component';
+import { FooterDisplayComponent } from './components/footer-display/footer-display.component';
 
 const appRoutes: Routes = [
   {path: 'angular-modules', component: ModulesComponent},
@@ -52,7 +57,12 @@ const appRoutes: Routes = [
     AccordianComponent,
     JumbotronComponent,
     AppFooterComponent,
-    HeroComponent
+    HeroComponent,
+    HeroVideoComponent,
+    TwoColLayoutComponent,
+    ColorsComponent,
+    TypeComponent,
+    FooterDisplayComponent,
   ],
   imports: [
     AngularFontAwesomeModule,
