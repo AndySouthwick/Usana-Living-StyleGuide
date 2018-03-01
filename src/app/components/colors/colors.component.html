@@ -1,3 +1,11 @@
-<p>
-  colors works!
-</p>
+<section id="section-color">
+  <div *ngFor="let color of data" >
+<div class="colors" [ngStyle]="{'background-color':  color.hexorrgba }"></div>
+    <ul class="color-data">
+      <li>Use: {{color.use}}</li>
+      <li>css: {{color.hexorrgba}}</li>
+      <li>Sass Variable: {{color.sassvar}}</li>
+    </ul>
+  </div>
+</section>
+

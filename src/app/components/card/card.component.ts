@@ -18,12 +18,7 @@ export class CardComponent implements OnInit {
   cardsSnippetData: {};
   data: {};
   loading: boolean;
-  image: string;
-  text1: string;
-  text2: string;
   linkText: string;
-  target: string;
-  linkUrl: string;
   html: string;
   css: string;
 
