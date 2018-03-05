@@ -29,8 +29,11 @@ import { TwoColLayoutComponent } from './components/app-components/two-col-layou
 import { ColorsComponent } from './components/colors/colors.component';
 import { TypeComponent } from './components/type/type.component';
 import { FooterDisplayComponent } from './components/footer-display/footer-display.component';
+import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
+import { HomeComponent } from './pages/home/home.component';
 
 const appRoutes: Routes = [
+  {path: '', component: HomeComponent},
   {path: 'angular-modules', component: ModulesComponent},
   {path: 'angular-modules/:id', component: ModulesComponent},
   {path: 'iconography', component: IconographyComponent},
@@ -63,6 +66,7 @@ const appRoutes: Routes = [
     ColorsComponent,
     TypeComponent,
     FooterDisplayComponent,
+    HomeComponent,
   ],
   imports: [
     AngularFontAwesomeModule,
@@ -71,12 +75,15 @@ const appRoutes: Routes = [
     HttpLinkModule,
     NgbModule.forRoot(),
     BrowserModule,
+    HighlightJsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     )
   ],
-  providers: [],
+  providers: [
+    HighlightJsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

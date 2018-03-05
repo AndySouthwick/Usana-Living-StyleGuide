@@ -1,5 +1,8 @@
 export const cardData = [{
   name: 'topCardData',
+  rules: '<h>Rules for Cards</h>' +
+  '<p>Image dimensions for cards is 414x328 keeping to this size will insure that the images are the same height' +
+  ' for all cards </p>',
   html: ' \n' +
         '<div  class="top-level-card-container">\n' +
         '  <div  class="card-container">\n' +

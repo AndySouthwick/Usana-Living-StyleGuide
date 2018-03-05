@@ -99,7 +99,7 @@ export const heroVideoData = [{
   '      Optimized For Web\n' +
   '    </p>\n' +
   '    <p>\n' +
-  '      If placing hero banner at top please refer and use the same rules as <a routerLink="/angular-modules/hero">hero</a>\n' +
+  '      If placing hero banner at top please refer and use the same rules as <a href="/angular-modules/hero">hero</a>\n' +
   '    </p>\n' +
   '    <p>\n' +
     '      Each video background must have a coresponding mobile static image. ' +
