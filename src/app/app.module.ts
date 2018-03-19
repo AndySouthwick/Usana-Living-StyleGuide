@@ -4,7 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { ModulesComponent } from './pages/modules/modules.component';
-import { IconographyComponent } from './pages/iconography/iconography.component';
+import { IconographyComponent } from './components/iconography/iconography.component';
 import { TypeographyComponent } from './pages/typeography/typeography.component';
 import { DesignelementsComponent } from './pages/designelements/designelements.component';
 import { MastersassComponent } from './pages/mastersass/mastersass.component';
@@ -20,7 +20,6 @@ import {InMemoryCache} from 'apollo-cache-inmemory';
 import { CardComponent } from './components/card/card.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FormComponent } from './components/form/form.component';
-import { AccordianComponent } from './components/accordian/accordian.component';
 import { JumbotronComponent } from './components/app-components/jumbotron/jumbotron.component';
 import { AppFooterComponent } from './components/app-components/app-footer/app-footer.component';
 import { HeroComponent } from './components/hero/hero.component';
@@ -31,19 +30,18 @@ import { TypeComponent } from './components/type/type.component';
 import { FooterDisplayComponent } from './components/footer-display/footer-display.component';
 import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
 import { HomeComponent } from './pages/home/home.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'angular-modules', component: ModulesComponent},
   {path: 'angular-modules/:id', component: ModulesComponent},
-  {path: 'iconography', component: IconographyComponent},
-  {path: 'typography', component: TypeographyComponent},
   {path: 'design-elements', component: DesignelementsComponent},
   {path: 'design-elements/:id', component: DesignelementsComponent},
-  {path: 'master-sass', component: MastersassComponent},
 ]
 @NgModule({
   declarations: [
+    TopNavigationComponent,
     AppComponent,
     ModulesComponent,
     IconographyComponent,
@@ -57,7 +55,6 @@ const appRoutes: Routes = [
     ButtonComponent,
     CardComponent,
     FormComponent,
-    AccordianComponent,
     JumbotronComponent,
     AppFooterComponent,
     HeroComponent,
@@ -67,6 +64,7 @@ const appRoutes: Routes = [
     TypeComponent,
     FooterDisplayComponent,
     HomeComponent,
+    TabsComponent,
   ],
   imports: [
     AngularFontAwesomeModule,

@@ -39,14 +39,16 @@ export class ModulesComponent implements OnInit {
           link: '/angular-modules/buttons',
           linkText: 'Buttons'
         },
+        {
+          link: '/angular-modules/tabs',
+          linkText: 'Tabs'
+        },
       ]
     }
 
 
     this.route.params.subscribe(params => {
-      const id = params['id'];
-      this.page = id;
-      console.log('id in constructor', id);
+      this.page = params['id'];
     });
       }
 

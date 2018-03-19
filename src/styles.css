@@ -35,6 +35,49 @@ section{
   margin: 55px 0 55px 0;
 }
 
+/* overwrite bootstrap tab styles */
+
+.tab-content {
+  max-height: 500px!important;
+  overflow: scroll!important;
+  max-width: 600px;
+}
+.nav-tabs{
+  border: none;
+}
+.nav-tabs
+.nav-link.active {
+  color: #495057;
+  background-color: #fff;
+  border-color: transparent transparent #179AE4!important;
+  border-width: 2px!important;
+  padding-bottom: 15px;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-color: transparent;
+}
+
+/* overwrite bootstrap button styles */
+
+div  .btn-ghost{
+  background-color: white!important;
+  color: #333;
+}
+
+div .btn-ghost:hover{
+  background-color: #333!important;
+  color: white;
+}
+div  .btn-primary{
+  background-color: #333!important;
+  color: white;
+}
+div .btn-primary:hover{
+  border-color: #333;
+  background-color: white!important;
+  color: #333;
+}
+
 
 /* not to be included when copying over styles, these are specific to Usana UX/UI Digital Styleguide */
 
@@ -57,43 +100,7 @@ app-code-snippets{
   margin-left: 25px;
 }
 
-div  .btn-ghost{
-  background-color: white!important;
-  color: #333;
-}
-
-div .btn-ghost:hover{
-  background-color: #333!important;
-  color: white;
-}
-div  .btn-primary{
-  background-color: #333!important;
-  color: white;
-}
-div .btn-primary:hover{
-  border-color: #333;
-  background-color: white!important;
-  color: #333;
-}
-
 .section-card{
   display: flex;
 }
-.tab-content {
-  max-height: 500px!important;
-  overflow: scroll!important;
-  max-width: 600px;
-}
-.nav-tabs{
-  border: none;
-}
-.nav-tabs
-.nav-link.active {
-  color: #495057;
-  background-color: #fff;
-  border-color: transparent transparent #179AE4!important;
-  border-width: 2px!important;
-}
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-  border-color: transparent;
-}
+

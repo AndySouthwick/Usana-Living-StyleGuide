@@ -88,7 +88,8 @@ export const heroData = [{
           '</h3>\n' +
           '<p>\n' +
           'Keep in mind while designing new campaign images that the text, subtext and CTA will have to line up the same as the image to the left\n' +
-          '</p>\n' +
+          '</p>' +
+          '<p>Image Width is 1440px, Height is 1024px</p>\n' +
           '<h4>For Copy Writers and Designers</h4>\n' +
           '<p>\n' +
           'Please adhere to these standards for copy\n' +

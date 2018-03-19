@@ -1,0 +1,16 @@
+.section-icon{
+  display: flex;
+}
+.icon-box{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+   width: 35px;
+  }
+  strong{
+    padding-bottom: 10px;
+
+  }
+}

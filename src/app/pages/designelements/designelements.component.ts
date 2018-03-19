@@ -23,6 +23,10 @@ export class DesignelementsComponent implements OnInit {
           link: '/design-elements/type',
           linkText: 'Typography'
         },
+        {
+          link: '/design-elements/icons',
+          linkText: 'Iconogrpahy'
+        },
     ]
     };
 

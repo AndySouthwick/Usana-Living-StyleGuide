@@ -11,8 +11,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.data = {
-      title: 'Usana UX Digital Style Guide'
-    }
+      title: 'USANA UX Digital Style Guide'
+    };
   }
 
 }
