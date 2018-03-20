@@ -12,7 +12,7 @@ export class DesignelementsComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
   moduleSelect = () => {
     this.data = {
-      title: 'Design Elements',
+      title: 'DESIGN ELEMENTS',
       description: 'Our parameters for usana.com are very specific. Character counts for sections, width and height for images are just a few.',
       secondaryNav: [
         {

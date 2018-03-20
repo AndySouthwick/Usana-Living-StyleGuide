@@ -32,6 +32,7 @@ import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
 import { HomeComponent } from './pages/home/home.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { FormElementsComponent } from './components/form-elements/form-elements.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -67,6 +68,7 @@ const appRoutes: Routes = [
     HomeComponent,
     TabsComponent,
     FormElementsComponent,
+    TooltipComponent,
   ],
   imports: [
     AngularFontAwesomeModule,

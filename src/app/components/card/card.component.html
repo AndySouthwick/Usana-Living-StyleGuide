@@ -1,6 +1,4 @@
 <section  *ngIf="data" class="section-card" >
-
-
   <div>
   <div class="card-container">
     <div class="card-inner">
@@ -21,11 +19,40 @@
     </div>
   </div>
 </div>
-
   <!-- Remove  For Production Use -->
   <app-code-snippets [data]="cardsSnippetData[0]"></app-code-snippets>
 <!--close Remove -->
 </section>
 
+<section class="section-card">
+  <div class="enroll">
+
+
+  <div class="enroll-card">
+    <div class="img-section">
+      <img src="assets/images/enrollCardImg.png" alt="">
+    </div>
+    <h4>
+      ASSOCIATE
+    </h4>
+    <p>
+      Save up to 10% on retail prices.
+
+      Save an additional 10% by signing up for convenient recurring deliveries (Auto Order).
+
+      Potentially earn commissions based on product sales.
+
+      Share this USANA opportunity with others and build your own sales team.
+
+      Qualify for exclusive incentives and world-class events.
+    </p>
+    <button class="btn btn-primary">
+      SELECT
+    </button>
+  </div>
+  </div>
+  <app-code-snippets [data]="cardsSnippetData[0]"></app-code-snippets>
+
+</section>
 
 
