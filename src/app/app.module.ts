@@ -31,6 +31,7 @@ import { FooterDisplayComponent } from './components/footer-display/footer-displ
 import { HighlightJsModule, HighlightJsService } from 'angular2-highlight-js';
 import { HomeComponent } from './pages/home/home.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { FormElementsComponent } from './components/form-elements/form-elements.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -65,6 +66,7 @@ const appRoutes: Routes = [
     FooterDisplayComponent,
     HomeComponent,
     TabsComponent,
+    FormElementsComponent,
   ],
   imports: [
     AngularFontAwesomeModule,

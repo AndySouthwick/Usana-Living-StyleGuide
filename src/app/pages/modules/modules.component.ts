@@ -43,6 +43,10 @@ export class ModulesComponent implements OnInit {
           link: '/angular-modules/tabs',
           linkText: 'Tabs'
         },
+        {
+          link: '/angular-modules/form-elements',
+          linkText: 'Form Elements'
+        },
       ]
     }
 

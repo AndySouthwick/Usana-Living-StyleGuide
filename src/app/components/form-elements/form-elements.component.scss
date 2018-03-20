@@ -1,0 +1,58 @@
+.form-input-style-border{
+  border-color: rgba(237, 237, 237, 1)!important;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  box-shadow: none;
+  border-radius:3px;
+}
+//css for input fields
+.section-form-elements{
+  display: flex;
+}
+.formInputs{
+  width: 50%;
+}
+input {
+  height: 40px;
+  width: 100%;
+}
+input[placeholder]{
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 200;
+}
+label{
+  display: block;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 300;
+}
+.select-input{
+  width: 50%;
+  position: relative;
+}
+.select-input:after {
+  content: '\f078';
+  font: 14px FontAwesome;
+  color: #333;
+  pointer-events: none;
+  position: absolute;
+  top:18px;
+  right: 16px;
+
+}
+ select {
+   width: 100%;
+  font-weight: 200;
+  font-size: 14px;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+  /* Add some styling */
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 24px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+}

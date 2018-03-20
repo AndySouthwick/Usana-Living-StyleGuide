@@ -1,0 +1,20 @@
+
+<section class="section-form-elements" *ngIf="formElementData[0]">
+  <div class="formInputs">
+    <label>Label</label>
+    <input type="text" placeholder="Placeholder" class="form-input-style-border">
+  </div>
+  <app-code-snippets [data]="formElementData[0]"></app-code-snippets>
+</section>
+
+<section class="section-form-elements" *ngIf="formElementData[1]">
+  <div class="select-input">
+    <select class="form-input-style-border">
+      <option selected> Select Box </option>
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Last long option</option>
+    </select>
+  </div>
+  <app-code-snippets [data]="formElementData[1]"></app-code-snippets>
+</section>

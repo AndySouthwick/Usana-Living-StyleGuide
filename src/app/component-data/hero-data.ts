@@ -95,11 +95,11 @@ export const heroData = [{
           'Please adhere to these standards for copy\n' +
           '                                     </p>\n' +
           '                                     <ul>\n' +
-          '                                     <li>      Title: 40 character max\n' +
+          '                                     <li>     Main Title Block: Font - Monteserrat lite font weight on everything but last word Semi Bold last word 50 pt' +
           '</li>\n' +
-          '<li>      Sub-Title: 200 character max\n' +
+          '<li>      Sub Heading: Font - Monteserrat Regular 36 pt' +
           '</li>\n' +
-          '<li>      CTA: 10 character max\n' +
+          '<li>      Sub Heading Character Count: 22 ' +
           '</li>\n' +
           '</ul>'
     }]

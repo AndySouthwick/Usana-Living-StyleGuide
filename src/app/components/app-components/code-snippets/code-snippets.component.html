@@ -2,21 +2,20 @@
     <ngb-tabset class="snippet">
       <ngb-tab title="RULES">
         <ng-template ngbTabContent >
-          <div [innerHTML]="data[0].rules" ></div>
+          <div [innerHTML]="data.rules" ></div>
         </ng-template>
       </ngb-tab>
       <ngb-tab title="HTML" >
         <ng-template ngbTabContent>
           <PRE  >
-            {{data[0].html}}
-
+            {{data.html}}
           </PRE>
 
         </ng-template>
       </ngb-tab>
       <ngb-tab title="CSS">
         <ng-template ngbTabContent >
-          <PRE [innerHTML]="data[0].css" highlight-js-content=".highlight" >
+          <PRE [innerHTML]="data.css" highlight-js-content=".highlight" >
           </PRE>
         </ng-template>
       </ngb-tab>
