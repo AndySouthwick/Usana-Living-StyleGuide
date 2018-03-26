@@ -76,5 +76,93 @@ export const formElementData = [{
   '  Rules for Select' +
   '</h3>\n' +
   ''
-}
+},
+  {
+    name: 'Form Example',
+    html: '\n' +
+    ' <div class="form">\n' +
+    '  <div class="form-group">\n' +
+    '    <div>\n' +
+    '      <label>Email<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '    <div>\n' +
+    '      <label>Confirm Email<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '  <div class="form-group">\n' +
+    '    <div>\n' +
+    '      <label>Primary Phone<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '    <div>\n' +
+    '      <label>Secondary Phone<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '  <div class="form-group">\n' +
+    '    <div>\n' +
+    '      <label>Street Address 1<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '    <div>\n' +
+    '      <label>Street Address 2<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '  <div class="form-group">\n' +
+    '    <div> <label>City<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '    <div>\n' +
+    '      <label>State<sup>*</sup></label>\n' +
+    '      <div class="select-input">\n' +
+    '        <select class="form-input-style-border">\n' +
+    '          <option selected> Select State </option>\n' +
+    '          <option>Option 1</option>\n' +
+    '          <option>Option 2</option>\n' +
+    '          <option>Last long option</option>\n' +
+    '        </select>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '\n' +
+    '  </div>\n' +
+    '  <div class="form-group">\n' +
+    '    <div>\n' +
+    '      <label>Postal Code<sup>*</sup></label>\n' +
+    '      <input type="text" placeholder="Enter" class="form-input-style-border">\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</div>\n',
+    css: '' +
+    '.form-group{\n' +
+    '  display: flex;\n' +
+    '  flex-direction: row;\n' +
+    '}\n' +
+    '.form-group div{\n' +
+    '  width: 400px\n' +
+    '}\n' +
+    '.form-group div:last-child{\n' +
+    '  margin-left: 60px;\n' +
+    '}\n' +
+    '.form-group:nth-child(4) div:last-child{\n' +
+    '  margin-left: 30px;\n' +
+    '}\n' +
+    '.form-group:nth-child(4) div:last-child label{\n' +
+    '  margin-left: 30px;\n' +
+    '}\n' +
+    '.form-group:last-child{\n' +
+    '  width: 200px ;\n' +
+    '}\n' +
+    '.form-group:last-child div{\n' +
+    '  margin-left: 0;\n' +
+    '}',
+    rules: '<h3>\n' +
+    '  Rules for Form' +
+    '</h3>\n' +
+    ''
+  }
 ]
