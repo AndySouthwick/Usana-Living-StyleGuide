@@ -80,8 +80,22 @@
   flex-direction: column;
   align-items: center;
   padding: 0 20px;
+  &:hover img{
+    transform: scale(1.1);
+  }
 }
+.img-section{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  img{
+    transition: all 1s ease-in-out;
+  }
 
+}
+.enroll-card:hover{
+
+}
 .enroll{
   padding: 20px;
   background-color: #fafafa;

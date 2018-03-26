@@ -16,6 +16,7 @@
 input {
   height: 40px;
   width: 100%;
+  margin: 0 0 10px;
 }
 input[placeholder]{
   padding-left: 5px;
@@ -31,6 +32,7 @@ label{
 .select-input{
   width: 50%;
   position: relative;
+  margin-left: 0;
 }
 .select-input:after {
   content: '\f078';
@@ -38,9 +40,8 @@ label{
   color: #333;
   pointer-events: none;
   position: absolute;
-  top:18px;
+  top:15px;
   right: 16px;
-
 }
  select {
    width: 100%;
@@ -50,9 +51,32 @@ label{
    -moz-appearance: none;
   /* Add some styling */
   height: 40px;
-  margin: 5px 0;
-  padding: 0 24px;
+   margin: 0 0 17px;
+  padding: 0 10px;
   line-height: 1.75;
   color: #333;
   background-color: #ffffff;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: row;
+}
+.form-group div{
+  width: 400px
+}
+.form-group div:last-child{
+  margin-left: 60px;
+}
+.form-group:nth-child(4) div:last-child{
+  margin-left: 30px;
+}
+.form-group:nth-child(4) div:last-child label{
+  margin-left: 30px;
+}
+.form-group:last-child{
+  width: 200px ;
+}
+.form-group:last-child div{
+  margin-left: 0;
 }
