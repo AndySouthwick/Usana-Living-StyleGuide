@@ -27,70 +27,39 @@ export const cardData = [{
   css: ' \n' +
   '@import "~sass/variables";\n' +
   '@import "~sass/mixins";\n' +
-  '.card-container {\n' +
-  '  margin:0 20px 0 20px;\n' +
-  '  text-align: center;\n' +
-  '  border-radius: 10px;\n' +
-  '  box-shadow: 0 15px 30px $tintedglass;\n' +
-  '  background-color: #fff;\n' +
-  '  position: relative;\n' +
-  '  padding-bottom: 20px;\n' +
-  '}\n' +
-  '.card-bg-container,\n' +
-  '.card-container,\n' +
-  '.card-bg img {\n' +
-  '  width: 320px;\n' +
-  '}\n' +
-  '.card-container,\n' +
-  '.card-bg img {\n' +
-  '  width: 320px;\n' +
-  '}\n' +
-  '.card-bg img {\n' +
-  '  height: auto;\n' +
-  '  border-radius: 10px 10px 0 0;\n' +
-  '}\n' +
-  '.card-bg-container {\n' +
-  '  position: relative;\n' +
-  '}\n' +
-  '.card-inner {\n' +
-  '  overflow: hidden;\n' +
-  '}\n' +
-  ':host[card-type] .card-container {\n' +
-  '  box-shadow: 0 15px 30px $tintedglass;\n' +
-  '}\n' +
-  '.card-text1 {\n' +
-  '  position: relative;\n' +
-  '  color: #333;\n' +
+  '.enroll-card{\n' +
+  '  margin: 20px;\n' +
+  '  font-size: 14px;\n' +
+  '  background-color: white;\n' +
+  '  width: 400px;\n' +
+  '  height: 520px;\n' +
+  '  border-radius: 20px;\n' +
+  '  box-shadow:0 5px 20px rgba(0, 0, 0, 0.05);\n' +
+  '  display: flex;\n' +
+  '  flex-direction: column;\n' +
+  '  align-items: center;\n' +
   '  padding: 0 20px;\n' +
-  '  font-weight: 500;\n' +
-  '  font-size: 1.35rem;\n' +
-  '  line-height: 1.35rem;\n' +
+  '  &:hover img{\n' +
+  '    transform: scale(1.1);\n' +
+  '  }\n' +
   '}\n' +
-  '.card-text1:empty {\n' +
-  '  display: none;\n' +
-  '}\n' +
-  '.card-content-container {\n' +
-  '  position: relative;\n' +
-  '}\n' +
-  '.card-text2 {\n' +
-  '  margin: 1.25rem;\n' +
-  '}\n' +
-  ':host:not([card-type]) .card-text2 strong{\n' +
-  '  text-align: right;\n' +
-  '  display:block;\n' +
+  '.img-section{\n' +
+  '  border-top-left-radius: 20px;\n' +
+  '  border-top-right-radius: 20px;\n' +
+  '  overflow: hidden;\n' +
+  '  img{\n' +
+  '    transition: all 1s ease-in-out;\n' +
+  '  }\n' +
   '\n' +
   '}\n' +
-  '@include media-breakpoint-down(sm) { /* mobile */\n' +
-  '  .card-bg-container,\n' +
-  '  .card-container,\n' +
-  '  .card-bg img {\n' +
-  '    width: 300px;\n' +
-  '  }\n' +
-  '  .card-container{\n' +
-  '    margin: 5px;\n' +
-  '  }\n' +
-  '  .btn {\n' +
-  '    width: 220px!important;\n' +
-  '  }\n' +
+  '.enroll-card:hover{\n' +
+  '\n' +
+  '}\n' +
+  '.enroll{\n' +
+  '  padding: 20px;\n' +
+  '  background-color: #fafafa;\n' +
+  '}\n' +
+  '.enroll h4{\n' +
+  '  margin: 14px;\n' +
   '}'
 }]

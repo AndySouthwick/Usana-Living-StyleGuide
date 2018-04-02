@@ -138,6 +138,66 @@ export const formElementData = [{
     '  </div>\n' +
     '</div>\n',
     css: '' +
+    '.form-input-style-border{\n' +
+    '  border-color: rgba(237, 237, 237, 1)!important;\n' +
+    '  border-width: 1px;\n' +
+    '  border-style: solid;\n' +
+    '  border-image: initial;\n' +
+    '  box-shadow: none;\n' +
+    '  border-radius:3px;\n' +
+    '}\n' +
+    '//css for input fields\n' +
+    '.section-form-elements{\n' +
+    '  display: flex;\n' +
+    '}\n' +
+    '.formInputs{\n' +
+    '  width: 50%;\n' +
+    '}\n' +
+    'input {\n' +
+    '  height: 40px;\n' +
+    '  width: 100%;\n' +
+    '  margin: 0 0 10px;\n' +
+    '}\n' +
+    'input[placeholder]{\n' +
+    '  padding-left: 5px;\n' +
+    '  font-size: 14px;\n' +
+    '  font-weight: 200;\n' +
+    '}\n' +
+    'label{\n' +
+    '  display: block;\n' +
+    '  color: #333333;\n' +
+    '  font-size: 14px;\n' +
+    '  font-weight: 300;\n' +
+    '}\n' +
+    '.select-input{\n' +
+    '  width: 50%;\n' +
+    '  position: relative;\n' +
+    '  margin-left: 0;\n' +
+    '}\n' +
+    '.select-input:after {\n' +
+    '  content: \'\\f078\';\n' +
+    '  font: 14px FontAwesome;\n' +
+    '  color: #333;\n' +
+    '  pointer-events: none;\n' +
+    '  position: absolute;\n' +
+    '  top:15px;\n' +
+    '  right: 16px;\n' +
+    '}\n' +
+    ' select {\n' +
+    '   width: 100%;\n' +
+    '  font-weight: 200;\n' +
+    '  font-size: 14px;\n' +
+    '  -webkit-appearance: none;\n' +
+    '   -moz-appearance: none;\n' +
+    '  /* Add some styling */\n' +
+    '  height: 40px;\n' +
+    '   margin: 0 0 17px;\n' +
+    '  padding: 0 10px;\n' +
+    '  line-height: 1.75;\n' +
+    '  color: #333;\n' +
+    '  background-color: #ffffff;\n' +
+    '}\n' +
+    '\n' +
     '.form-group{\n' +
     '  display: flex;\n' +
     '  flex-direction: row;\n' +
@@ -159,7 +219,7 @@ export const formElementData = [{
     '}\n' +
     '.form-group:last-child div{\n' +
     '  margin-left: 0;\n' +
-    '}',
+    '}\n',
     rules: '<h3>\n' +
     '  Rules for Form' +
     '</h3>\n' +
